@@ -10,17 +10,46 @@
 
   <link rel="stylesheet" href="styles/global.css" type="text/css">
   <link rel="stylesheet" href="packages/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/mainmenu.css" type="text/css">
 
   <script src="scripts/jquery-3.2.1.min.js"></script>
   <script src="packages/bootstrap/js/bootstrap.min.js"></script>
-  <script src="scripts/script.js"></script>
+  <script src="scripts/basic.js"></script>
   <script defer src="packages/fontawesome-free-5.0.8/svg-with-js/js/fontawesome-all.js"></script>  
   </head>
   <body>
   <div class="container-fluid">
-    <div class="col-md-6"></div>
-    <div class="col-md-6"></div>
+    <div class="col-md-6 col-lg-7" id="firstHalf"></div>
+    <div class="col-md-6 col-lg-5" id="secondHalf">
+      <div class="row menu">
+        <div class="col-md-7 col-lg-7"><button class="btn btn-primary">Dobrodružství!!</button></div>
+        <div class="col-md-7 col-lg-7"><button class="btn btn-primary disabled">Pokračovat</button></div>
+        <div class="col-md-7 col-lg-7"><button class="btn btn-primary">Nastavení</button></div>
+        <div class="col-md-7 col-lg-7"><button class="btn btn-primary button" id="modalBtn">Opustit hru</button></div>
+      </div>
+    </div>
+  </div>
+ 
+  <div id="simpleModal" class="modals">
+    <div class="modal-contents">
+      <div class="modal-headers">Koepfovi tu bude smutno.. </div>
+      <button class="btn btn-primary btn-lg" id="leave">Neboj, brzy se vrátím..</button><button class="btn btn-primary closeBtn btn-lg" id="stay">Žertuju, nikam nejdu</button>
+    </div>
   </div>
 
+ <!-- modal window -->
+  <!-- <div id="modalExit" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">O-..Opravdu..? Koepfovi se bude stýskat..</h4>
+        </div>
+        <div class="modal-body">
+          <button class="btn btn-primary" onclick="window.close()">Vrátím se brzy..</button><button class="btn btn-primary">Jen žertuju ^-^</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
   </body>
 </html>
